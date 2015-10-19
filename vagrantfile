@@ -1,12 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# Get our current path
-vagrant_root_path = File.dirname(__FILE__)
-
-# Get our basedir folder name
-vagrant_root_name = File.basename(vagrant_root_path)
-
 #install plugins if not installed currently.
 #we use the host updater to maintain a hosts entry to easily access the box
 unless Vagrant.has_plugin?("vagrant-hostsupdater")
