@@ -1,0 +1,6 @@
+- hosts: all
+  gather_facts: no
+  sudo: true
+  tasks:
+    - name: Install latest Apache
+      apt: name=apache2 update_cache=yes state=latest
